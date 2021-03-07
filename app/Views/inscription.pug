@@ -1,0 +1,47 @@
+include mixins/base
+html
+    head
+        meta(charset="utf-8")
+        title="Demo | login"
+        link(href="/stylesheets/style.css" rel="stylesheet")
+
+
+    body
+        .backgroundGrid
+            img.imageIndex(src='/assets/images/pexels-vo-tien-935039.jpg')
+        .row
+            div.col-6.index
+                h1=title
+                div.graybox.col-9
+                    +flash
+                    +form("post", "/inscription")
+                            .form-row
+                                .form-group.col-6
+                                    label(for='lastname').label Nom
+                                    input#lastname(name="lastname" type='text' placeholder='Entrez votre nom').form-control.input
+                                .form-group.col-6
+                                    label(for='firstname').label Prénom
+                                    input#firstname(name="firstname" type='text' placeholder='Entrez votre prénom').form-control.input
+                            .form-group
+                                label(for='username').label Nom d'utilisateur
+                                input#username(name="username" type='text' placeholder='Entrez votre nom d\'utilisateur').form-control.input
+                            .form-group
+                                label(for='email').label Couriel
+                                .input-group
+                                    .input-group-prepend
+                                        .input-group-text.emailSign @
+                                    input#email(name="email" type='email' aria-describedby='emailHelp' placeholder='Entrez votre email').form-control.input
+                                small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+                            .form-group
+                                label(for='password').label Mot de passe
+                                input#password(name="password" type='password' placeholder='Password').form-control.input
+                            button(type='submit' id='activeButton').btn.btn-outlin.button.mt-2 S'inscrire
+
+
+
+
+
+
+
+
+

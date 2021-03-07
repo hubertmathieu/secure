@@ -1,0 +1,32 @@
+include mixins/base
+extends layout
+
+block content
+    +form("post", "/add-credit")
+        .row
+            .col-6
+                .form-group
+                    label(for='firstname') Prénom
+                    input#firstname(name="firstname" type='text' placeholder='Propriétaire de la carte').form-control.inputPassword
+            .col-6
+                .form-group
+                    label(for='lastname') Nom
+                    input#lastname(name="lastname" type='text' placeholder='Propriétaire de la carte').form-control.inputPassword
+        .row
+            .col-4
+                .form-group
+                    label(for='creditNumber') Numéro de la carte
+                    input#creditNumber(name="creditNumber" type='text' placeholder='1234 1234 ...').form-control.inputPassword
+            .col-2
+                .form-group
+                    label(for='expiration') Date d'expiration
+                    input#expiration(name="expiration" type='text' placeholder='03/22').form-control.inputPassword
+            .col-3
+                .form-group
+                    label(for='cvv') CVV
+                    input#cvv(name="cvv" type='text' placeholder='CVV').form-control.inputPassword
+            .col-3
+                .form-group
+                    label(for='website') Site web
+                    input#website(name="website" type='text' placeholder='Ex: Amazon').form-control.inputPassword
+        button(type='submit').btn.btn-outlin.mt-2.btn-success Ajouter

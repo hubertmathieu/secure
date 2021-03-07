@@ -1,0 +1,328 @@
+@import "vendor/bootstrap.min.css";
+@import "vendor/fontawesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import "vendor/pretty-checkbox.min.css";
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+}
+
+h1 {
+
+}
+
+a,p {
+    color: #4d4d4d!important;
+}
+
+#menu {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    background: #f2f2f2;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.copyright {
+    background: rgb(254, 140, 0);  /* fallback for old browsers */
+}
+
+.socialLink{
+    text-align: center;
+    background: rgb(254, 140, 0);
+    padding: 1rem;
+    margin-bottom: -0.7rem;
+}
+
+.textFooter {
+    padding: 2rem;
+}
+
+.footerTextContainer {
+    background-color: #ffe8cc;
+}
+
+#company {
+    font-weight: bolder;
+    color: #262626!important;
+    font-size: 150%;
+}
+
+#logo {
+    color: #fe8c00;
+}
+
+a.nav-link:hover {
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 90%;
+    border-radius: 25px;
+}
+
+a, i:hover {
+    opacity: 100%;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+a.nav-link {
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+i {
+    text-align: right!important;
+}
+
+.test {
+    background-color: #0c5460;
+    height: 200px;
+    width: 100%;
+}
+
+.embed-responsive {
+    position: relative;
+    margin-bottom: 2%;
+}
+
+#image{
+    background: linear-gradient(black, white);
+    min-height: 100%;
+    background-image: url("/assets/images/pexels-vo-tien-935039.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.index {
+    height: 100%;
+}
+
+
+
+.index h1 {
+    color: white;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.indexText {
+    color: white!important;
+    text-align: justify;
+    font-size: large;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+.graybox {
+    border-radius: 5px;
+    padding: 5%;
+    background-color: rgba(132, 132, 132, 0.2);
+    margin: auto;
+}
+
+
+
+.button {
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    border-color: #fe8c00;
+    color: #fe8c00!important;
+    height: auto;
+}
+
+.button:hover, #activeButton:hover {
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f83600, #fe8c00);
+    border-color: #fe8c00;
+    color: white!important;
+
+}
+
+#activeButton {
+    background: rgba(254, 140, 0, 0.5);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(248, 54, 0, 0.3), rgba(254, 140, 0, 0.3));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(248, 54, 0, 0.3), rgba(254, 140, 0, 0.3));
+    border-color: #fe8c00;
+    color: white!important;
+}
+
+#icon-button {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f83600, #fe8c00);
+    border-color: #fe8c00;
+    color: white!important;
+}
+
+.add-icon {
+    font-size: 30px;
+}
+
+.label {
+    color: white;
+}
+
+.input {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    border-color: #232526;
+    color: white!important;
+}
+
+.backgroundGrid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.backgroundGrid:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: url("/assets/images/dotgrid.png") repeat;
+    z-index: 1;
+    width: 150%;
+    height: 150%;
+    opacity: 0.9;
+}
+
+.backgroundGrid:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.imageIndex {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.divOverImage {
+    position: absolute;
+    z-index: 10;
+}
+
+.inputPassword {
+    border-color: #fe8c00;
+}
+
+.tableSecure {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+tr.tableTitle > th {
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#divElement {
+
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 10rem;
+    padding: 8%;
+}
+
+#deleteTitle {
+    text-align: center;
+    color: white;
+}
+
+#deleteText {
+    text-align: center;
+}
+
+.copyButton {
+    margin: 0;
+    margin-top: -0.2rem;
+    padding: 0;
+}
+
+.managerIcon {
+    color: black;
+    margin-left: 1rem;
+}
+
+#generate {
+    background-color: #5a6268;
+    color: rgb(254, 140, 0)!important;
+    border-radius: 0px 5px 5px 0px;
+    border-color: rgb(254, 140, 0)!important;
+}
+
+#deleteText {
+    color : #95999c!important;
+    font-size: 1.5rem;
+}
+
+.emailSign {
+    background-color: #414345!important;
+    border: 0px;
+    color: white;
+}
+
+
+
+.passwordLink {
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

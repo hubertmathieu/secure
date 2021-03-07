@@ -1,0 +1,21 @@
+include mixins/base
+html
+    head
+        meta(charset="utf-8")
+        title="Demo | login"
+        link(href="/stylesheets/style.css" rel="stylesheet")
+
+
+    body
+
+        .row
+            .col-4
+            .col-4
+                #divElement
+                    h1(id='deleteTitle') Êtes-vous certain de supprimer la carte de crédit
+                    p(id='deleteText')="terminant par " + credit.card_number
+                    a(href="/deleteCredit/" + credit.card_id + "/confirmation")
+                        button(type='submit' id='activeButton').btn.btn-outlin.button.mt-2 Supprimer
+                    a(href="/credit-card")
+                        button(type='submit' id='activeButton1').btn.btn-outlin.button.mt-2 Annuler
+            .col-4

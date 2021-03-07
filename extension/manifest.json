@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Secure Extension",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/login"],
+      "js": ["githubContent.js"]
+    },
+    {
+      "matches": ["https://www.messenger.com/"],
+      "js": ["messengerContent.js"]
+    },
+    {
+      "matches": ["https://www.facebook.com/"],
+      "js": ["facebookContent.js"]
+    },
+    {
+      "matches": ["https://www.netflix.com/ca/login"],
+      "js": ["netflixContent.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "profile.png"
+  },
+  "permissions": [
+    "tabs"
+  ]
+
+}

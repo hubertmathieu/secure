@@ -1,0 +1,29 @@
+include mixins/base
+extends layout
+
+block content
+
+    a(href="add-credit")
+        button(id='icon-button').btn.btn-outlin.button: i.fas.fa-plus-square.add-icon.
+    br
+    br
+    table.table.tableSecure
+        thead.thead-dark
+            tr.tableTitle
+                th(scope='col') Deniers numéros de cartes
+                th(scope='col') Nom du propriétaire
+                th(scope='col') Site web
+                th(scope='col')
+        tbody
+            each credit in credits
+                tr
+                    th(scope='row')="**** **** **** " + credit.card_number
+                    td=credit.firstname + " " + credit.lastname
+                    td=credit.web_site
+                    td.text-right
+                        a(href="/deleteCredit/" + credit.card_id): i.far.fa-trash-alt.managerIcon
+
+
+    br
+
+

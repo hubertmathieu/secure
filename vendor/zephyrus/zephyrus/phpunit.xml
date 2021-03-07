@@ -1,0 +1,32 @@
+<phpunit
+        bootstrap="tests/lib/init.php"
+        colors="true"
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        processIsolation="false"
+        stopOnFailure="false"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true">
+    <testsuites>
+        <testsuite name="application">
+            <directory>tests/application</directory>
+            <directory>tests/utilities</directory>
+            <directory>tests/network</directory>
+            <directory>tests/security</directory>
+            <directory>tests/database</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+            <exclude>
+
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="tests/coverage/result.xml" />
+        <log type="coverage-html" target="tests/coverage/result" />
+    </logging>
+</phpunit>

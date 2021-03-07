@@ -1,0 +1,22 @@
+include mixins/base
+extends layout
+
+block content
+    br
+    table.table.tableSecure
+        thead.thead-dark
+            tr.tableTitle
+                th(scope='col') Website
+                th(scope='col') Content
+                th(scope='col')
+        tbody
+            each password in passwords
+                tr
+                    td=password.web_site
+                    td(id=password.password_id).password=password.password_content
+                    td.text-right
+                        a(href="/delete/" + password.password_id): i.far.fa-trash-alt.managerIcon
+                        button.btn.copyButton.copy(type='button'): i.far.fa-copy.managerIcon
+                        a(href=password.web_site target="_blank" rel="noopener noreferrer"): i.fas.fa-sign-in-alt.managerIcon
+
+

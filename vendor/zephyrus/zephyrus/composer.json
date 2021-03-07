@@ -1,0 +1,42 @@
+{
+  "name": "zephyrus/zephyrus",
+  "description": "Simple PHP framework",
+  "authors": [
+    {
+      "name": "David Tucker",
+      "email": "davidt2003@msn.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1",
+    "pug-php/pug": "2.*",
+    "enygma/expose": "^3.0",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-simplexml": "*",
+    "ext-intl": "*",
+    "ext-iconv": "*",
+    "ext-curl": "*",
+    "ext-fileinfo": "*",
+    "ext-posix": "*",
+    "ext-openssl": "*"
+  },
+  "require-dev": {
+    "php": ">=7.3",
+    "phpunit/phpunit": "9.*",
+    "codeclimate/php-test-reporter": "dev-master",
+    "ext-xdebug": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zephyrus\\": "src/Zephyrus"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zephyrus\\Tests\\": "tests"
+    }
+  }
+}
